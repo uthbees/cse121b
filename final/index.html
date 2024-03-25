@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Final project</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+<div class="centerX">
+    <h1>D&D spells</h1>
+    <div class="filtersContainer">
+        <div>
+            <label for="spellLevelFilter">
+                Filter by spell level
+            </label>
+            <select id="spellLevelFilter" onchange="updateSpells()">
+                <option value="all" selected>All</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+                <option>8</option>
+                <option>9</option>
+            </select>
+        </div>
+        <div>
+            <label for="magicSchoolFilter">
+                Filter by school of magic
+            </label>
+            <select id="magicSchoolFilter" onchange="updateSpells()">
+                <option value="all" selected>All</option>
+                <option>Abjuration</option>
+                <option>Conjuration</option>
+                <option>Divination</option>
+                <option>Enchantment</option>
+                <option>Evocation</option>
+                <option>Illusion</option>
+                <option>Necromancy</option>
+                <option>Transmutation</option>
+            </select>
+        </div>
+    </div>
+    <br/>
+    <br/>
+    <div id="spellsList" class="spellsList">
+        Loading...
+    </div>
+    <dialog id="spellInfoDialog">
+        <div id="dialogCloseButtonHolder">
+            <div id="dialogCloseButton">X</div>
+        </div>
+        <div id="dialogContents"></div>
+    </dialog>
+    <script src="main.js"></script>
+</div>
+</body>
+</html>

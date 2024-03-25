@@ -1,0 +1,51 @@
+.centerX {
+    width: 100%;
+    text-align: center;
+}
+
+.filtersContainer {
+    display: inline-grid;
+    gap: 20px;
+    grid-template-columns: auto auto;
+}
+
+.spellsList {
+    display: inline-flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.spellCard {
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.15);
+    padding: 10px;
+    cursor: pointer;
+}
+
+#spellInfoDialog {
+    text-align: left;
+    width: 80vw;
+    min-height: 5em;
+    max-height: 80vh;
+    overflow: scroll;
+}
+
+#dialogCloseButtonHolder {
+    position: sticky;
+    top: 0;
+}
+
+#dialogCloseButton {
+    position: absolute;
+    right: 0;
+    top: 0;
+    cursor: pointer;
+    font-size: x-large;
+}
+
+.spellDataItem {
+    margin-bottom: 10px;
+    white-space: pre-line;
+}
